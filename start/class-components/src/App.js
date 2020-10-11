@@ -5,16 +5,14 @@ class App extends Component {
         super();
 
         this.state = {
-            name: "Alex",
-            age: 18,
+            isLoggedIn: false,
         };
     };
 
     render() {
         return (
             <div>
-                <h1>{this.state.name}</h1>
-                <h3><font color="#3AC1EF">▍{this.state.age} years old</font></h3>
+                <h1>You are currently logged {this.state.isLoggedIn ? 'in' : 'out'}</h1>
             </div>
         )
     }
