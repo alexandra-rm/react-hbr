@@ -15,4 +15,7 @@ This will render a read-only field. If the field should be mutable use `defaultC
 ## [Step 4](https://github.com/alexandra-rm/react-hbr/pull/3)
 Компонент App с состоянием и загрузкой данных из файла в состояние
 
+## [Step 5](https://github.com/alexandra-rm/react-hbr/pull/5)
+Обработчик события onChange
+
 
