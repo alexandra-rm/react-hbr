@@ -18,4 +18,7 @@ This will render a read-only field. If the field should be mutable use `defaultC
 ## [Step 5](https://github.com/alexandra-rm/react-hbr/pull/5)
 Обработчик события onChange
 
+## [Step 6](https://github.com/alexandra-rm/react-hbr/pull/6)
+Изменение состояния компонента
+
 
