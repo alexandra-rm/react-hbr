@@ -1,8 +1,5 @@
 Todo List
 
-## Todo List
-[here](https://github.com/alexandra-rm/react-hbr/tree/master/todo-list)
-
 ## Step 1
 простое перечисление чекбоксов и параграфов
 
@@ -14,5 +11,8 @@ Todo List
 Формирование списка компонентов TodoItem с помощью map() из массива данных.
 С поломкой: Failed prop type: You provided a `checked` prop to a form field without an `onChange` handler.
 This will render a read-only field. If the field should be mutable use `defaultChecked`. Otherwise, set either `onChange` or `readOnly`.
+
+## [Step 4](https://github.com/alexandra-rm/react-hbr/pull/3)
+Компонент App с состоянием и загрузкой данных из файла в состояние
 
 
