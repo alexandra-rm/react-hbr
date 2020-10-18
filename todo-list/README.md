@@ -21,4 +21,5 @@ This will render a read-only field. If the field should be mutable use `defaultC
 ## [Step 6](https://github.com/alexandra-rm/react-hbr/pull/6)
 Изменение состояния компонента
 
-
+## [Step 7](https://github.com/alexandra-rm/react-hbr/pull/7)
+Стилизация пунктов списка в зависимости от их состояния
