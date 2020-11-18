@@ -4,7 +4,6 @@ import { updateCalculation, clearCalculation } from '../actions';
 import CalcButton from './CalcButton';
 
 class Calculator extends Component {
-    // todo refs
     render() {
         return (
             <div className='calculator'>

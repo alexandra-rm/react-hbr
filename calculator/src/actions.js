@@ -18,8 +18,6 @@ const calc = (operation, a=0, b=0) => {
 
 };
 
-// todo если в результате прошлого действия вышла "ошибка"
-// todo как-то и до какого момента подсвечивать действия?
 export const updateCalculation = (inputValue, currentOperand = 0, operation = "+", operand1, operand2) => {
     if (currentOperand == badResult) {
         currentOperand = 0;
