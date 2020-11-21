@@ -19,7 +19,7 @@ const calc = (operation, a=0, b=0) => {
 };
 
 export const updateCalculation = (inputValue, currentOperand = 0, operation = "+", operand1, operand2) => {
-    if (currentOperand == badResult) {
+    if (currentOperand === badResult) {
         currentOperand = 0;
         operand1 = 0;
     }

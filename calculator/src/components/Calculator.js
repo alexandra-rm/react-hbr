@@ -10,31 +10,25 @@ class Calculator extends Component {
                 <div className='calculator-results'>
                     <div className='myOutputDisplay'>{this.props.math_operation ? this.props.current_operand : this.props.operand_1}</div>
                 </div>
-
-                <div className='calculator-inputs-row'>
+                <div className='calculator-keys'>
                     <button className='clear' onClick={() => this.props.clearCalculation()}>C</button>
                     <CalcButton value="/" htmlCode="247" additionalClass="operator" />
-                </div>
-                <div className='calculator-inputs-row'>
-                    <CalcButton value={7} />
-                    <CalcButton value={8} />
-                    <CalcButton value={9} />
-                    <CalcButton value='*' htmlCode="215" additionalClass="operator" />
-                </div>
 
-                <div className='calculator-inputs-row'>
-                    <CalcButton value={4} />
-                    <CalcButton value={5} />
-                    <CalcButton value={6} />
+                    <CalcButton value={7} additionalClass="numeric" />
+                    <CalcButton value={8} additionalClass="numeric" />
+                    <CalcButton value={9} additionalClass="numeric" />
+                    <CalcButton value='*' htmlCode="215" additionalClass="operator" />
+
+                    <CalcButton value={4} additionalClass="numeric" />
+                    <CalcButton value={5} additionalClass="numeric" />
+                    <CalcButton value={6} additionalClass="numeric" />
                     <CalcButton value='-' htmlCode="8722" additionalClass="operator" />
-                </div>
-                <div className='calculator-inputs-row'>
-                    <CalcButton value={1} />
-                    <CalcButton value={2} />
-                    <CalcButton value={3} />
+
+                    <CalcButton value={1} additionalClass="numeric" />
+                    <CalcButton value={2} additionalClass="numeric" />
+                    <CalcButton value={3} additionalClass="numeric" />
                     <CalcButton value='+' htmlCode="43" additionalClass="operator" />
-                </div>
-                <div className='calculator-inputs-row'>
+
                     <CalcButton value={0} additionalClass="zero" />
                     <CalcButton value='=' htmlCode="61" additionalClass="equal" />
                 </div>
