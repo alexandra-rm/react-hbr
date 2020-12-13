@@ -12,7 +12,6 @@ class TaskInput extends Component {
     addTask = () => {
         const {input} = this.state;
         if (input) {
-            console.log('TaskInput addTask IF input:', input);
             this.props.addTask(input);
             this.setState({input: ''});
         }
@@ -30,7 +29,6 @@ class TaskInput extends Component {
 
     render() {
         const {input} = this.state;
-        console.log('render input:', input);
 
         return (
             <div className="task-input">
