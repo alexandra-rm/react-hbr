@@ -1,4 +1,4 @@
-import { UPDATE_CALCULATION, CLEAR_ALL } from './constants';
+import { UPDATE_CALCULATION_STATE, CLEAR_ALL } from './constants';
 
 const initialState = {
     operand_1: 0,
@@ -9,7 +9,7 @@ const initialState = {
 
 const calculatorReducer = (state = initialState, action) => {
     switch (action.type) {
-        case UPDATE_CALCULATION:
+        case UPDATE_CALCULATION_STATE:
             return {
                 calculation: action.payload.calculation,
                 current_operand: action.payload.current_operand,

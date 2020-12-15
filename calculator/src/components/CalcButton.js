@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-
-import { updateCalculation } from '../actions';
+import { updateCalculationAction } from '../actions';
 
 class CalcButton extends Component {
     render() {
@@ -16,7 +15,8 @@ class CalcButton extends Component {
 }
 
 const mapDispatchToProps = (dispatch) => ({
-    updateCalculation: (inputValue, currentOperand, operation, operand1, operand2) => dispatch(updateCalculation(inputValue, currentOperand, operation, operand1, operand2))
+    updateCalculation: (inputValue, currentOperand, operation, operand1, operand2) =>
+        dispatch(updateCalculationAction(inputValue, currentOperand, operation, operand1, operand2))
 });
 
 const mapStateToProps = (state) => ({
