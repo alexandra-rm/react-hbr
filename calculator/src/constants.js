@@ -1,2 +1,0 @@
-export const UPDATE_CALCULATION = 'UPDATE_CALCULATION';
-export const CLEAR_ALL = 'CLEAR_ALL';

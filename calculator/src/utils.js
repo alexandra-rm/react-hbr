@@ -1,8 +1,6 @@
-import { UPDATE_CALCULATION, CLEAR_ALL } from './constants';
+export const badResult = 'ошибка';
 
-const badResult = 'ошибка';
-
-const calc = (operation, a=0, b=0) => {
+export const calc = (operation, a=0, b=0) => {
     switch (operation) {
         case '+':
             return a + b;
@@ -15,10 +13,9 @@ const calc = (operation, a=0, b=0) => {
         default:
             return b || a;
     }
-
 };
 
-export const updateCalculation = (inputValue, currentOperand = 0, operation = "+", operand1, operand2) => {
+export const updateCalculationLogic = ({inputValue, currentOperand = 0, operation/* = "+"*/, operand1, operand2}) => {
     if (currentOperand === badResult) {
         currentOperand = 0;
         operand1 = 0;
@@ -52,18 +49,9 @@ export const updateCalculation = (inputValue, currentOperand = 0, operation = "+
     }
 
     return {
-        type: UPDATE_CALCULATION,
-        payload: {
-            current_operand: updateCurrentOperand,
-            math_operation: newMathOperation,
-            operand_1: updateOperand_1,
-            operand_2: updateOperand_2,
-        }
-    }
-};
-
-export const clearCalculation = () => {
-    return {
-        type: CLEAR_ALL,
-    }
+        current_operand: updateCurrentOperand,
+        math_operation: newMathOperation,
+        operand_1: updateOperand_1,
+        operand_2: updateOperand_2,
+    };
 };
