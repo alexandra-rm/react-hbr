@@ -1,18 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { createStore } from 'redux';
-import { Provider } from 'react-redux';
+import {Provider} from 'mobx-react';
 
-import App from './App';
-import calculatorReducer from './reducers';
+import store from './store';
 
-let store = createStore(calculatorReducer);
+import Calculator from "./components/Calculator";
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+        <Calculator store={store}/>
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')
